@@ -1,0 +1,233 @@
+/* Pastor David's Church Website - CSS Styles */
+
+/* Basic reset and body styling */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background: linear-gradient(135deg, #f5f7ff 0%, #c3cfe2 100%);
+    color: #2c3e50;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* Header styling */
+h1 {
+    color: #2c3e50;
+    text-align: center;
+    font-size: 2.8em;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+h2 {
+    color: #7f8c8d;
+    text-align: center;
+    font-style: italic;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.2em;
+}
+
+h3 {
+    color: #2980b9;
+    border-left: 4px solid #3498db;
+    padding-left: 15px;
+    margin-top: 35px;
+    font-size: 1.5em;
+    background-color: rgba(52, 152, 219, 0.1);
+    padding: 10px 15px;
+    border-radius: 0 8px 8px 0;
+}
+
+h4 {
+    color: #34495e;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #ecf0f1;
+    padding-bottom: 5px;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+    padding: 0 10px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 10px 15px;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Scripture verse styling */
+em {
+    color: #8e44ad;
+    font-style: italic;
+    background-color: rgba(142, 68, 173, 0.1);
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    border-left: 3px solid #8e44ad;
+}
+
+/* List styling */
+ul {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+li {
+    margin-bottom: 8px;
+    padding: 8px 5px;
+    border-bottom: 1px dotted #bdc3c7;
+    transition: all 0.3s ease;
+}
+
+li:last-child {
+    border-bottom: none;
+}
+
+li:hover {
+    background-color: rgba(52, 152, 219, 0.1);
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+/* Form styling */
+form {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    margin: 20px 0;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #ecf0f1;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+    box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+input[type="checkbox"] {
+    margin-right: 8px;
+}
+
+button {
+    background: linear-gradient(45deg, #3498db, #2980b9);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #2980b9, #1f639a);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Contact section special styling */
+h3:contains("Contact Information"),
+h4:contains("Church Address"),
+h4:contains("Contact Details"),
+h4:contains("Pastor David Adeoye") {
+    background-color: rgba(46, 204, 113, 0.1);
+    border-left-color: #2ecc71;
+}
+
+/* Giving section styling */
+h3:contains("Giving") {
+    background-color: rgba(241, 196, 15, 0.1);
+    border-left-color: #f1c40f;
+    color: #f39c12;
+}
+
+/* Events section styling */
+h3:contains("Events") {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-left-color: #e74c3c;
+    color: #c0392b;
+}
+
+/* Social media section */
+h3:contains("Connect") {
+    background-color: rgba(155, 89, 182, 0.1);
+    border-left-color: #9b59b6;
+    color: #8e44ad;
+}
+
+/* Final call-to-action styling */
+p:contains("Join us this Sunday") {
+    background: linear-gradient(45deg, #2ecc71, #27ae60);
+    color: white;
+    text-align: center;
+    font-size: 1.3em;
+    font-weight: bold;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    margin-top: 30px;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2.2em;
+    }
+    
+    h3 {
+        font-size: 1.3em;
+    }
+    
+    form {
+        padding: 15px;
+    }
+}
